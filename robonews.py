@@ -53,7 +53,7 @@ for ind in df.index:
 
     list.append(dict)
 news_df=pd.DataFrame(list)
-news_df.to_excel("articles.xlsx")
+news_df.to_excel("/var/www/html/robonews/articles.xlsx")
 #news_df
 
 nltk.download('stopwords')
@@ -104,5 +104,5 @@ plt.axis('equal')
 
 # show plot 
 plt.tight_layout()
-plt.savefig("pizza.png")
+plt.savefig("/var/www/html/robonews/pizza.png")
 plt.show() 
